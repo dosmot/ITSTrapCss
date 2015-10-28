@@ -1,0 +1,219 @@
+@font-face {
+    font-family: 'UbuntuLightRegular';
+   	src: url('../font/ubuntu-l.eot');
+    src: url('../font/ubuntu-l.eot?#iefix') format('embedded-opentype'),
+         url('../font/ubuntu-l.woff') format('woff'),
+         url('../font/ubuntu-l.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    
+}
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'UbuntuLightRegular';
+	color: #3B3939;
+}
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* сеточка пошла */
+.container {
+  margin: 0 auto;
+  max-width: 1280px;
+  width: 90%; 
+}
+[class*="col-"] {
+  float: left;
+  padding-right: 20px;
+}
+[class*="col-"]:last-of-type {
+  padding-right: 0;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.col-2-3 {
+  width: 66.66%;
+}
+.col-1-3 {
+  width: 33.33%;
+}
+.col-1-2 {
+  width: 50%;
+}
+.col-1-4 {
+  width: 25%;
+}
+.col-1-8 {
+  width: 12.5%;
+}
+.row-off {
+  padding: 20px 0 20px 20px;
+}
+.row-off > [class*='col-']:last-of-type {
+  padding-right: 20px;
+}
+
+/* кнопка */
+.btn{
+	display: inline-block;
+  padding: .375rem 1rem;
+  font-size: 1rem;
+  font-weight: normal;
+  line-height: 1.5;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  border: .0625rem solid transparent;
+  border-radius: .25rem;
+}
+.btn:focus,
+.btn:hover {
+  text-decoration: none;
+}
+.btn:active,
+.btn.active {
+  background-image: none;
+  outline: 0;
+}
+.btn.disabled,
+.btn:disabled,
+fieldset[disabled] .btn {
+  cursor: not-allowed;
+  opacity: .65;
+}
+
+a.btn.disaabled,
+fieldset[disabled] a.btn {
+  pointer-events: none;
+}
+/* сверх-кнопка */
+.btn-default {
+  color: #fff;
+  background-color: #0275d8;
+  border-color: #0275d8;
+}
+
+.btn-default:focus,
+.btn-default.focus,
+.btn-default:active,
+.btn-default.active,
+.open > .btn-primary.dropdown-toggle {
+  color: #fff;
+  background-color: #025aa5;
+  border-color: #01549b;
+}
+
+.btn-default:hover {
+  color: #fff;
+  background-color: #025aa5;
+  border-color: #01549b;
+}
+
+.btn-default:active,
+.btn-default.active,
+.open > .btn-default.dropdown-toggle {
+  background-image: none;
+}
+.btn-default-outline {
+  color: #0275d8;
+  background-color: transparent;
+  background-image: none;
+  border-color: #0275d8;
+}
+
+.btn-default.disabled:focus,
+.btn-default.disabled.focus,
+.btn-default:disabled:focus,
+.btn-default:disabled.focus,
+fieldset[disabled] .btn-primary:focus,
+fieldset[disabled] .btn-primary.focus {
+  background-color: #0275d8;
+  border-color: #0275d8;
+}
+
+.btn-default.disabled:hover,
+.btn-default:disabled:hover,
+fieldset[disabled] .btn-primary:hover {
+  background-color: #0275d8;
+  border-color: #0275d8;
+}
+/* прозрачная-кнопка */
+.btn-default-outline:focus,
+.btn-default-outline.focus,
+.btn-default-outline:active,
+.btn-default-outline.active,
+.open > .btn-primary-outline.dropdown-toggle {
+  color: #fff;
+  background-color: #0275d8;
+  border-color: #0275d8;
+}
+
+.btn-default-outline:hover {
+  color: #fff;
+  background-color: #0275d8;
+  border-color: #0275d8;
+}
+.btn-default-outline.disabled:focus,
+.btn-default-outline.disabled.focus,
+.btn-default-outline:disabled:focus,
+.btn-default-outline:disabled.focus,
+fieldset[disabled] .btn-primary-outline:focus,
+fieldset[disabled] .btn-primary-outline.focus {
+  border-color: #43a7fd;
+}
+
+.btn-default-outline.disabled:hover,
+.btn-default-outline:disabled:hover,
+fieldset[disabled] .btn-primary-outline:hover {
+  border-color: #43a7fd;
+}
+/* футерок блатной */
+.footer
+{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	background: #CCC;
+	padding-bottom: 30px; 
+}
+/* развидеть */
+.hide {
+  display: none !important; }
+/* все по полочкам */
+.left-align {
+  text-align: left; }
+
+.right-align {
+  text-align: right; }
+
+.center, .center-align {
+  text-align: center; 
+}
+
+.left {
+  float: left !important; 
+}
+
+.right {
+  float: right !important; 
+}
+/* обрезание текста */
+.truncate {
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; 
+}
