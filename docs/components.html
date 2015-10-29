@@ -28,6 +28,7 @@
       <li><a href="#footer">Футер</a></li>
       <li><a href="#hide">Сокрытие</a></li>
       <li><a href="#align">Алигн</a></li>
+      <li><a href="#sidebar-offcanvas">Сайдбар</a></li>
     </ul> <!-- /nav -->
 
 		<h1 class="demo-headline">Компоненты</h1>
@@ -205,6 +206,9 @@
 &lt;/div&gt;
 </pre>
 
+</div>
+</div>
+
 
 
           <div id="align"></div>
@@ -249,6 +253,52 @@
       </div> <!-- /.demo-row -->
 
     </div><!-- /.container -->
+              <div id="sidebar-offcanvas"></div>
+        </div> <!-- /.demo-content -->
+      </div> <!-- /.demo-row -->
+
+      <div class="demo-row">
+        <div class="demo-title">
+          <h3>Сайдбар</h3>
+        </div>
+        <div class="demo-content">
+          <p class="mbl">
+            Присутствует сайдбар
+          </p>
+
+             <pre class="prettyprint">
+&lt;div id="wrapper"&gt;
+&lt;div id="sidebar-wrapper"&gt;
+&lt;ul class="sidebar-nav"&gt;
+&lt;li class="sidebar-brand"&gt;
+&lt;a href="#"&gt;
+Лого
+&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;
+Элемент сайдбара
+&lt;/li&gt;
+&lt;/div&gt;
+&lt;div id="content-wrapper"&gt;
+&lt;a href="#menu-toggle" id="menu-toggle"&gt;
+кнопонька бара
+&lt;/a&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+  <p class="mbl">
+            Так же нужно добавить скрипт.
+          </p>
+          <pre class="prettyprint">
+          &lt;script&gt;
+            $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+          &lt;/script&gt;
+          </pre>
+</div>
+</div>
 
     <script src="../dist/js/vendor/jquery.min.js"></script>
     <script src="../dist/js/vendor/video.js"></script>
