@@ -1,5 +1,5 @@
 @import url(../font/ubuntu.css);
-
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
 *{
 	margin: 0;
 	padding: 0;
@@ -10,6 +10,13 @@
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+}
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  margin-bottom: 100px;
 }
 /* сеточка пошла */
 .container {
@@ -209,7 +216,7 @@ fieldset[disabled] .btn-primary-outline:hover {
 	bottom: 0;
 	width: 100%;
 	background: #CCC;
-	padding-bottom: 30px; 
+    height:100px; 
 }
 /* развидеть */
 .hide {
@@ -357,3 +364,4 @@ fieldset[disabled] .btn-primary-outline:hover {
         margin-right: 0;
     }
 }
+/*custom style*/
